@@ -3,7 +3,7 @@ A Cross-Modal Densely Guided Knowledge Distillation Based on Modality Rebalancin
 
 Accepted by IJCAI 2025
 [[Paper]](https://www.ijcai.org/proceedings/2025/5217.pdf)
-[[Webpage]]()
+[[Webpage]](https://frostfreee.github.io/CDGKD/)
 
 ![model_architecture](docs/image.png)
 
