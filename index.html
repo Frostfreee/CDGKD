@@ -116,7 +116,7 @@
     <div class="hero-body" style="display: flex; flex-direction: column; align-items: center;">
       <img src="static/images/overall_frame.png" alt="Overall Framework" style="max-width: 80%; height: auto; margin-bottom: 2rem;" />
       <h2 class="subtitle has-text-centered">
-        Our proposed framework enhances unimodal (visual) emotion recognition by distilling knowledge from a multimodal (Visual+EEG) teacher network. We introduce a modality rebalancing strategy to improve the teacher network and a densely guided distillation method to effectively transfer knowledge while minimizing error accumulation.
+        Our proposed framework enhances unimodal (Visual) emotion recognition by distilling knowledge from a multimodal (Visual+EEG) teacher network. We introduce a modality rebalancing strategy to improve the teacher network and a densely guided distillation method to effectively transfer knowledge while minimizing error accumulation.
       </h2>
     </div>
   </div>
@@ -175,7 +175,7 @@
     <div class="columns is-vcentered" style="margin-top: 2rem;">
       <div class="column is-5">
         <img src="static/images/proto.png" alt="Diagram of the Prototype-Based Modality Rebalancing Strategy" style="border-radius:10px;"/>
-        <p class="has-text-centered" style="margin-top: 0.5rem;">Figure 3: The training process of our multimodal teacher network. </p>
+        <p class="has-text-centered" style="margin-top: 0.5rem;">Figure 1: The training process of our multimodal teacher network. </p>
       </div>
       <div class="column is-6 is-offset-1">
         <h3 class="title is-4">1. Prototype-Based Modality Rebalancing Strategy</h3>
@@ -198,13 +198,13 @@
             <strong>Motivation:</strong> Transferring knowledge from a complex multimodal "teacher" to a simple unimodal "student" is difficult due to the large structural gap between them. Furthermore, traditional step-by-step distillation can suffer from "error accumulation," where mistakes from one stage are amplified in the next. 
           </p>
           <p>
-            <strong>Our Approach:</strong> We propose CDGKD, which uses multiple Teacher Assistant (TA) networks to bridge this gap. The core innovation is **dense guidance**: the student learns not just from its immediate TA, but from a combined set of all higher-level networks, including the original teacher. We also employ a **stochastic learning strategy**, which randomly selects knowledge sources during training. This prevents the network from relying on a single knowledge path, reduces the risk of overfitting, and effectively mitigates error accumulation. 
+            <strong>Our Approach:</strong> We propose CDGKD, which uses multiple Teacher Assistant (TA) networks to bridge this gap. The core innovation is dense guidance: the student learns not just from the immediately preceding TA, but from a combined set of all higher-level networks, including the original teacher. We also employ a stochastic learning strategy, which randomly selects knowledge sources during training. This prevents the network from relying on a single knowledge path, reduces the risk of overfitting, and effectively mitigates error accumulation. 
           </p>
         </div>
       </div>
       <div class="column is-5 is-offset-1">
         <img src="static/images/DGKD.png" alt="Overview of the Cross-Modal Densely Guided Knowledge Distillation (CDGKD) framework" style="border-radius:10px;"/>
-        <p class="has-text-centered" style="margin-top: 0.5rem;">Figure 4: The CDGKD framework. </p>
+        <p class="has-text-centered" style="margin-top: 0.5rem;">Figure 2: The CDGKD framework. </p>
       </div>
     </div>
   </div>
@@ -218,17 +218,17 @@
       <div class="column is-10">
 
         <h3 class="title is-4 has-text-centered">Student Network Performance (CDGKD)</h3>
-        <p class="has-text-centered content">
+        <!-- <p class="has-text-centered content">
           As shown in Table 1, our proposed <strong>CDGKD</strong> method significantly outperforms existing knowledge distillation baselines on both the DEAP and MAHNOB-HCI datasets. Unlike methods that struggle with the structural gap or suffer from error accumulation, our approach effectively integrates knowledge from all higher-level networks, providing diverse guidance that leads to superior classification performance for the final unimodal student network.
-        </p>
+        </p> -->
         <img src="static/images/table1.png" alt="Table 1: Comparison of student network performance across knowledge distillation baselines" style="max-width: 80%; margin: 1rem auto; display: block; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
-        
+        <p class="has-text-centered" style="margin-top: 0.5rem;">Table 1: Comparison of student network performance across knowledge distillation baselines. </p>
         <h3 class="title is-4 has-text-centered" style="margin-top: 4rem;">Teacher Network Performance (Prototype Loss)</h3>
-        <p class="has-text-centered content">
+        <!-- <p class="has-text-centered content">
           Table 2 demonstrates that our multimodal teacher network, enhanced with the <strong>Prototype-Based Modality Rebalancing Strategy</strong>, also achieves state-of-the-art performance. By explicitly balancing the convergence rates of the visual and EEG modalities, our teacher network avoids the common issue of modality imbalance and generates higher-quality multimodal knowledge to be distilled. This provides a stronger foundation for the student network's learning process.
-        </p>
+        </p> -->
         <img src="static/images/table2.png" alt="Table 2: Comparison of the teacher network performance with baselines" style="max-width: 80%; margin: 1rem auto; display: block; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
-
+        <p class="has-text-centered" style="margin-top: 0.5rem;">Table 2: Comparison of the teacher network performance with baselines. </p>
       </div>
     </div>
   </div>
