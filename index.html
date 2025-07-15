@@ -93,7 +93,7 @@
                   </a>
                 </span>
 
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV_PAPER_ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -101,7 +101,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -127,9 +127,11 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content" style="font-size: 1.1rem; text-align: justify;">
-          <p style="text-align: justify;"></p>
-            Multimodal emotion recognition has garnered significant attention for its ability to integrate data from multiple modalities to enhance performance. However, physiological signals like electroencephalogram are more challenging to acquire than visual data due to higher collection costs and complexity. This limits the practical application of multimodal networks. To address this issue, this paper proposes a cross-modal knowledge distillation framework for emotion recognition. The framework aims to leverage the strengths of a multimodal teacher network to enhance the performance of a unimodal student network using only the visual modality as input. Specifically, we design a prototype-based modality rebalancing strategy, which dynamically adjusts the convergence rates of different modalities to mitigate modality imbalance issue. It enables the teacher network to better integrate multimodal information. Building upon this, we develop a Cross-Modal Densely Guided Knowledge Distillation (CDGKD) method, which effectively transfers knowledge extracted by the multimodal teacher network to the unimodal student network. Our CDGKD uses multi-level teacher assistant networks to bridge the teacher-student gap and employs dense guidance to reduce error accumulation during knowledge transfer. Experimental results demonstrate that the proposed framework outperforms existing methods on two public emotion datasets, providing an effective solution for emotion recognition in modality-constrained scenarios.
-          </p>
+          <p style="text-align: justify;">
+  <b>Multimodal emotion recognition</b> has garnered significant attention for its ability to integrate data from multiple modalities to enhance performance. However, <b>physiological signals</b> like <b>electroencephalogram</b> are more challenging to acquire than <b>visual data</b> due to higher collection costs and complexity. This limits the practical application of multimodal networks. To address this issue, this paper proposes a <b>cross-modal knowledge distillation</b> framework for emotion recognition. The framework aims to leverage the strengths of a <b>multimodal teacher network</b> to enhance the performance of a <b>unimodal student network</b> using only the visual modality as input. Specifically, we design a <b>prototype-based modality rebalancing strategy</b>, which dynamically adjusts the convergence rates of different modalities to mitigate the <b>modality imbalance</b> issue. It enables the teacher network to better integrate multimodal information. Building upon this, we develop a <b>Cross-Modal Densely Guided Knowledge Distillation (CDGKD)</b> method, which effectively transfers knowledge extracted by the multimodal teacher network to the unimodal student network. Our CDGKD uses <b>multi-level teacher assistant networks</b> to bridge the teacher-student gap and employs <b>dense guidance</b> to reduce <b>error accumulation</b> during knowledge transfer. Experimental results demonstrate that the proposed framework outperforms existing methods on two public emotion datasets, providing an effective solution for emotion recognition in <b>modality-constrained scenarios</b>.
+</p>
+
+
         </div>
       </div>
     </div>
@@ -179,7 +181,7 @@
       </div>
       <div class="column is-6 is-offset-1">
         <h3 class="title is-4">1. Prototype-Based Modality Rebalancing Strategy</h3>
-        <div class="content">
+        <div class="content" style="text-align: justify;">
           <p>
             <strong>Motivation:</strong> When fusing data from different sources like video and EEG, networks often face "modality imbalance," where one modality dominates and suppresses the other. This limits the overall performance of the fusion network. 
           </p>
@@ -193,7 +195,7 @@
     <div class="columns is-vcentered" style="margin-top: 3rem;">
       <div class="column is-6">
         <h3 class="title is-4">2. Cross-Modal Densely Guided Knowledge Distillation (CDGKD)</h3>
-        <div class="content">
+        <div class="content" style="text-align: justify;">
           <p>
             <strong>Motivation:</strong> Transferring knowledge from a complex multimodal "teacher" to a simple unimodal "student" is difficult due to the large structural gap between them. Furthermore, traditional step-by-step distillation can suffer from "error accumulation," where mistakes from one stage are amplified in the next. 
           </p>
@@ -209,7 +211,6 @@
     </div>
   </div>
 </section>
-
 
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -285,6 +286,21 @@
           Your browser does not support the video tag.
         </video>
       </div>
+    </div>
+
+    <div class="buttons is-centered" style="margin-top: 1.5rem;">
+      <a href="static/ppts/IJCAI25_Eng.pptx" class="button is-link is-rounded">
+        <span class="icon">
+          <i class="fas fa-file-powerpoint"></i>
+        </span>
+        <span>Download English Slides (.pptx)</span>
+      </a>
+      <a href="static/ppts/IJCAI25_Ch.pptx" class="button is-success is-rounded">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>下载中文版PPT (.pptx)</span>
+      </a>
     </div>
 
   </div>
